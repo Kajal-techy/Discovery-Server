@@ -1,19 +1,1 @@
-spring:
-  application:
-    name: discovery-server
-server:
-  port: 8761
-#############################################
-# EUREKA CLIENT CONFIGURATION#
-#############################################
-# To stop it from trying to register to an Eureka Server
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    # To stop fetching registry information about other services from other peers
-    fetch-registry: false
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
 
